@@ -1021,7 +1021,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 8b49eabf-f212-43da-b462-8e22842b0569)
   )
-  (label "V_comp" (at 196.85 83.82 0)
+  (label "V_comp" (at 198.12 83.82 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 8c996613-2fd5-4ab0-b7db-5578f527862a)
   )
