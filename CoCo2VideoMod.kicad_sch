@@ -255,6 +255,65 @@
         )
       )
     )
+    (symbol "Device:C_Polarized" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
+      (property "Reference" "C" (at 0.635 2.54 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Value" "C_Polarized" (at 0.635 -2.54 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Footprint" "" (at 0.9652 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "cap capacitor" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Polarized capacitor" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "CP_*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "C_Polarized_0_1"
+        (rectangle (start -2.286 0.508) (end 2.286 1.016)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.778 2.286)
+            (xy -0.762 2.286)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.27 2.794)
+            (xy -1.27 1.778)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (rectangle (start 2.286 -0.508) (end -2.286 -1.016)
+          (stroke (width 0) (type default))
+          (fill (type outline))
+        )
+      )
+      (symbol "C_Polarized_1_1"
+        (pin passive line (at 0 3.81 270) (length 2.794)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 90) (length 2.794)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Device:D" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "D" (at 0 2.54 0)
         (effects (font (size 1.27 1.27)))
@@ -1365,13 +1424,13 @@
   (symbol (lib_id "Device:C") (at 143.51 157.48 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0ce7f0c1-5eb8-4126-96af-28e0c7f781f0)
-    (property "Reference" "C?" (at 142.24 154.94 90)
+    (property "Reference" "C8" (at 142.24 154.94 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "22n" (at 144.78 153.67 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 144.4752 153.67 0)
+    (property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W3.5mm_P5.00mm" (at 144.4752 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 143.51 157.48 0)
@@ -1382,7 +1441,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "C?") (unit 1)
+          (reference "C8") (unit 1)
         )
       )
     )
@@ -1391,13 +1450,13 @@
   (symbol (lib_id "Device:R") (at 91.44 86.36 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 17ae8c6b-2578-4346-8e2e-200daa2c98e8)
-    (property "Reference" "R?" (at 91.44 83.82 90)
+    (property "Reference" "R8" (at 91.44 83.82 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "680R" (at 91.44 86.36 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 91.44 88.138 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 91.44 88.138 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 91.44 86.36 0)
@@ -1408,7 +1467,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "R?") (unit 1)
+          (reference "R8") (unit 1)
         )
       )
     )
@@ -1417,7 +1476,7 @@
   (symbol (lib_id "power:GND") (at 67.31 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1841adac-a04c-4782-9a19-eac3bc1a6893)
-    (property "Reference" "#PWR?" (at 67.31 59.69 0)
+    (property "Reference" "#PWR07" (at 67.31 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 63.5 54.61 0)
@@ -1433,7 +1492,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR07") (unit 1)
         )
       )
     )
@@ -1442,7 +1501,7 @@
   (symbol (lib_id "power:+5V") (at 144.78 35.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 22025bcc-fd87-4ee8-8f80-c854ffc94f84)
-    (property "Reference" "#PWR?" (at 144.78 39.37 0)
+    (property "Reference" "#PWR06" (at 144.78 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 140.97 34.29 0)
@@ -1458,7 +1517,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR06") (unit 1)
         )
       )
     )
@@ -1467,13 +1526,13 @@
   (symbol (lib_id "Device:D") (at 100.33 64.77 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 26f2f41d-69ed-463f-9cad-450dc0c9b368)
-    (property "Reference" "D?" (at 102.87 62.23 90)
+    (property "Reference" "D1" (at 102.87 62.23 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1N4148" (at 102.87 64.77 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 100.33 64.77 0)
+    (property "Footprint" "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp" (at 100.33 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 100.33 64.77 0)
@@ -1484,7 +1543,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "D?") (unit 1)
+          (reference "D1") (unit 1)
         )
       )
     )
@@ -1493,13 +1552,13 @@
   (symbol (lib_id "Device:C") (at 81.28 86.36 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2e81f62c-2174-485e-8ab6-1fc084627cbf)
-    (property "Reference" "C?" (at 78.74 85.09 90)
+    (property "Reference" "C5" (at 78.74 85.09 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100n" (at 77.47 87.63 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 77.47 87.3252 0)
+    (property "Footprint" "Capacitor_THT:C_Rect_L9.0mm_W4.2mm_P7.50mm_MKT" (at 77.47 87.3252 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 81.28 86.36 0)
@@ -1510,7 +1569,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "C?") (unit 1)
+          (reference "C5") (unit 1)
         )
       )
     )
@@ -1519,13 +1578,13 @@
   (symbol (lib_id "Device:R") (at 151.13 105.41 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 360122e5-0232-47b0-93e4-f3cf304b42e2)
-    (property "Reference" "R?" (at 151.13 102.87 90)
+    (property "Reference" "R11" (at 151.13 102.87 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "75R" (at 151.13 105.41 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 151.13 107.188 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 151.13 107.188 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 151.13 105.41 0)
@@ -1536,7 +1595,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "R?") (unit 1)
+          (reference "R11") (unit 1)
         )
       )
     )
@@ -1578,7 +1637,7 @@
     (property "Value" "Conn_01x05" (at 33.02 68.58 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "" (at 36.83 68.58 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" (at 36.83 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 36.83 68.58 0)
@@ -1593,6 +1652,32 @@
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
           (reference "J1") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C_Polarized") (at 63.5 44.45 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 3a7352a0-696f-414b-b23d-4ea89c65fa75)
+    (property "Reference" "C2" (at 62.23 48.26 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "220u" (at 64.77 50.8 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" (at 64.4652 48.26 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 63.5 44.45 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 8551e43b-8ecc-425b-9d67-5ab6bdcfd887))
+    (pin "2" (uuid 33f11e3f-26e0-46b1-857a-20d25462ebf8))
+    (instances
+      (project "CoCo2VideoMod"
+        (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
+          (reference "C2") (unit 1)
         )
       )
     )
@@ -1626,13 +1711,13 @@
   (symbol (lib_id "Device:R") (at 92.71 134.62 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3ecb05cd-1ba0-4b85-b48c-7a43e0fde27f)
-    (property "Reference" "R?" (at 95.25 134.62 90)
+    (property "Reference" "R16" (at 95.25 134.62 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "470R" (at 92.71 134.62 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 90.932 134.62 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 90.932 134.62 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 92.71 134.62 0)
@@ -1643,7 +1728,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "R?") (unit 1)
+          (reference "R16") (unit 1)
         )
       )
     )
@@ -1652,13 +1737,13 @@
   (symbol (lib_id "Device:R") (at 115.57 64.77 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4a22c9e0-8253-4b50-a93e-793cfc226cce)
-    (property "Reference" "R?" (at 118.11 64.77 90)
+    (property "Reference" "R3" (at 118.11 64.77 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "220R" (at 115.57 64.77 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 113.792 64.77 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 113.792 64.77 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 115.57 64.77 0)
@@ -1669,7 +1754,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "R?") (unit 1)
+          (reference "R3") (unit 1)
         )
       )
     )
@@ -1678,7 +1763,7 @@
   (symbol (lib_id "power:GND") (at 86.36 80.01 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4ddc0c54-96c7-40f6-bffe-3afcc9e61223)
-    (property "Reference" "#PWR?" (at 86.36 86.36 0)
+    (property "Reference" "#PWR09" (at 86.36 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 82.55 81.28 0)
@@ -1694,7 +1779,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR09") (unit 1)
         )
       )
     )
@@ -1703,13 +1788,13 @@
   (symbol (lib_id "Device:C") (at 71.12 44.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5cf5aba9-ea3c-49a7-9cf4-a35a7ddb48ce)
-    (property "Reference" "C?" (at 69.85 46.99 90)
+    (property "Reference" "C3" (at 69.85 46.99 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "22n" (at 72.39 48.26 90)
+    (property "Value" "22n" (at 72.39 47.625 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 72.0852 48.26 0)
+    (property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W3.5mm_P5.00mm" (at 72.0852 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 71.12 44.45 0)
@@ -1720,7 +1805,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "C?") (unit 1)
+          (reference "C3") (unit 1)
         )
       )
     )
@@ -1735,7 +1820,7 @@
     (property "Value" "Conn_01x03" (at 33.02 55.88 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "" (at 36.83 55.88 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (at 36.83 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 36.83 55.88 0)
@@ -1781,7 +1866,7 @@
   (symbol (lib_id "Transistor_BJT:BC547") (at 142.24 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 743de675-4cfb-4c3b-84b5-69f1d110720c)
-    (property "Reference" "Q?" (at 147.32 62.2299 0)
+    (property "Reference" "Q5" (at 147.32 62.2299 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "BC547" (at 147.32 64.7699 0)
@@ -1799,7 +1884,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "Q?") (unit 1)
+          (reference "Q5") (unit 1)
         )
       )
     )
@@ -1808,13 +1893,13 @@
   (symbol (lib_id "TRS-80:MC1372P") (at 86.36 64.77 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 786cf5db-3b5f-4668-85ac-700962d2abb3)
-    (property "Reference" "U?" (at 88.9 66.04 90)
+    (property "Reference" "U1" (at 88.9 66.04 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MC1372P" (at 86.36 68.58 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 83.82 59.69 0)
+    (property "Footprint" "Package_DIP:DIP-14_W7.62mm" (at 83.82 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 83.82 59.69 0)
@@ -1837,7 +1922,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "U?") (unit 1)
+          (reference "U1") (unit 1)
         )
       )
     )
@@ -1846,13 +1931,13 @@
   (symbol (lib_id "Device:C") (at 115.57 77.47 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8394ffef-c49c-40f1-8eca-dfa66089a7f7)
-    (property "Reference" "C?" (at 114.3 74.93 90)
+    (property "Reference" "C4" (at 114.3 74.93 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100n" (at 116.84 73.66 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 116.5352 73.66 0)
+    (property "Footprint" "Capacitor_THT:C_Rect_L9.0mm_W4.2mm_P7.50mm_MKT" (at 116.5352 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 115.57 77.47 0)
@@ -1863,7 +1948,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "C?") (unit 1)
+          (reference "C4") (unit 1)
         )
       )
     )
@@ -1872,13 +1957,13 @@
   (symbol (lib_id "Device:L") (at 57.15 38.1 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 83f52817-6a96-4096-9dfe-1e1a3b3f5a08)
-    (property "Reference" "L?" (at 57.15 35.56 90)
+    (property "Reference" "L1" (at 57.15 35.56 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10u" (at 57.15 39.37 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 57.15 38.1 0)
+    (property "Footprint" "Inductor_THT:L_Axial_L6.6mm_D2.7mm_P10.16mm_Horizontal_Vishay_IM-2" (at 57.15 38.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 57.15 38.1 0)
@@ -1889,7 +1974,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "L?") (unit 1)
+          (reference "L1") (unit 1)
         )
       )
     )
@@ -1898,13 +1983,13 @@
   (symbol (lib_id "Device:R") (at 124.46 62.23 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 88d18a43-ca3d-4f6e-aac9-3b5d9e16bb5e)
-    (property "Reference" "R?" (at 127 62.23 90)
+    (property "Reference" "R2" (at 127 62.23 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "5k6" (at 124.46 62.23 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 122.682 62.23 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 122.682 62.23 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 124.46 62.23 0)
@@ -1915,7 +2000,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "R?") (unit 1)
+          (reference "R2") (unit 1)
         )
       )
     )
@@ -1924,13 +2009,13 @@
   (symbol (lib_id "Device:R") (at 134.62 77.47 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 920dcf26-bc12-4f54-b811-b0f6ff4f56c5)
-    (property "Reference" "R?" (at 137.16 77.47 90)
+    (property "Reference" "R6" (at 137.16 77.47 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "3k3" (at 134.62 77.47 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 132.842 77.47 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 132.842 77.47 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 134.62 77.47 0)
@@ -1941,7 +2026,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "R?") (unit 1)
+          (reference "R6") (unit 1)
         )
       )
     )
@@ -1975,13 +2060,13 @@
   (symbol (lib_id "Device:R") (at 115.57 111.76 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9bdf6573-7029-4662-bf2f-2e009f1bac3f)
-    (property "Reference" "R?" (at 118.11 111.76 90)
+    (property "Reference" "R12" (at 118.11 111.76 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "470R" (at 115.57 111.76 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 113.792 111.76 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 113.792 111.76 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 115.57 111.76 0)
@@ -1992,7 +2077,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "R?") (unit 1)
+          (reference "R12") (unit 1)
         )
       )
     )
@@ -2004,10 +2089,10 @@
     (property "Reference" "C1" (at 85.09 101.6 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "100n" (at 87.63 102.87 90)
+    (property "Value" "100p" (at 87.63 102.87 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 87.3252 102.87 0)
+    (property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" (at 87.3252 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 86.36 99.06 0)
@@ -2027,13 +2112,13 @@
   (symbol (lib_id "Device:R") (at 69.85 99.06 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9f7f82e1-6708-43f6-818a-5be1f376e60a)
-    (property "Reference" "R?" (at 72.39 99.06 90)
+    (property "Reference" "R9" (at 72.39 99.06 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "4k7" (at 69.85 99.06 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 68.072 99.06 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 68.072 99.06 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 69.85 99.06 0)
@@ -2044,7 +2129,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "R?") (unit 1)
+          (reference "R9") (unit 1)
         )
       )
     )
@@ -2053,13 +2138,13 @@
   (symbol (lib_id "Device:R") (at 151.13 128.27 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b0ee2221-2119-4d87-a06b-4d2e0e2aaca7)
-    (property "Reference" "R?" (at 151.13 125.73 90)
+    (property "Reference" "R13" (at 151.13 125.73 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "75R" (at 151.13 128.27 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 151.13 130.048 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 151.13 130.048 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 151.13 128.27 0)
@@ -2070,7 +2155,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "R?") (unit 1)
+          (reference "R13") (unit 1)
         )
       )
     )
@@ -2079,13 +2164,13 @@
   (symbol (lib_id "Device:R") (at 144.78 77.47 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b5e51736-7eb6-4c05-bfcd-58366d5694a0)
-    (property "Reference" "R?" (at 147.32 77.47 90)
+    (property "Reference" "R7" (at 147.32 77.47 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "470R" (at 144.78 77.47 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 143.002 77.47 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 143.002 77.47 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 144.78 77.47 0)
@@ -2096,7 +2181,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "R?") (unit 1)
+          (reference "R7") (unit 1)
         )
       )
     )
@@ -2105,13 +2190,13 @@
   (symbol (lib_id "Device:R") (at 151.13 71.12 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b7571049-f039-4bad-a450-9170dda5a826)
-    (property "Reference" "R?" (at 151.13 68.58 90)
+    (property "Reference" "R5" (at 151.13 68.58 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "75R" (at 151.13 71.12 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 151.13 72.898 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 151.13 72.898 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 151.13 71.12 0)
@@ -2122,7 +2207,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "R?") (unit 1)
+          (reference "R5") (unit 1)
         )
       )
     )
@@ -2131,13 +2216,13 @@
   (symbol (lib_id "Device:C") (at 127 151.13 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b9cfb1b9-6085-4491-ad93-220beb219729)
-    (property "Reference" "C?" (at 124.46 149.86 90)
+    (property "Reference" "C7" (at 124.46 149.86 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100n" (at 123.19 152.4 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 123.19 152.0952 0)
+    (property "Footprint" "Capacitor_THT:C_Rect_L9.0mm_W4.2mm_P7.50mm_MKT" (at 123.19 152.0952 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 127 151.13 0)
@@ -2148,7 +2233,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "C?") (unit 1)
+          (reference "C7") (unit 1)
         )
       )
     )
@@ -2157,13 +2242,13 @@
   (symbol (lib_id "Device:R") (at 80.01 99.06 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bf0f7b6d-889e-4e2f-9301-ba5bfd0076c5)
-    (property "Reference" "R?" (at 82.55 99.06 90)
+    (property "Reference" "R10" (at 82.55 99.06 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "330R" (at 80.01 99.06 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 78.232 99.06 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 78.232 99.06 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 80.01 99.06 0)
@@ -2174,7 +2259,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "R?") (unit 1)
+          (reference "R10") (unit 1)
         )
       )
     )
@@ -2183,13 +2268,13 @@
   (symbol (lib_id "Device:R") (at 69.85 134.62 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c0c0bc0a-ee66-4cc1-9c78-97dea4a5ca90)
-    (property "Reference" "R?" (at 72.39 134.62 90)
+    (property "Reference" "R14" (at 72.39 134.62 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k" (at 69.85 134.62 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 68.072 134.62 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 68.072 134.62 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 69.85 134.62 0)
@@ -2200,7 +2285,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "R?") (unit 1)
+          (reference "R14") (unit 1)
         )
       )
     )
@@ -2209,7 +2294,7 @@
   (symbol (lib_id "power:GND") (at 144.78 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c267ae43-7ab1-4663-9c10-efe46ef33bc0)
-    (property "Reference" "#PWR?" (at 144.78 91.44 0)
+    (property "Reference" "#PWR011" (at 144.78 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 148.59 86.36 0)
@@ -2225,7 +2310,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR011") (unit 1)
         )
       )
     )
@@ -2234,7 +2319,7 @@
   (symbol (lib_id "power:+5V") (at 115.57 59.69 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c6fcff7a-0fc2-40c7-b977-fd8ef413d9df)
-    (property "Reference" "#PWR?" (at 115.57 63.5 0)
+    (property "Reference" "#PWR08" (at 115.57 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 111.76 58.42 0)
@@ -2250,7 +2335,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR08") (unit 1)
         )
       )
     )
@@ -2259,13 +2344,13 @@
   (symbol (lib_id "Device:C") (at 63.5 113.03 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cbfcbf9c-1e60-49c2-bc87-df6f7aac7a38)
-    (property "Reference" "C?" (at 60.96 111.76 90)
+    (property "Reference" "C6" (at 60.96 111.76 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1u" (at 59.69 114.3 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 59.69 113.9952 0)
+    (property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W4.5mm_P5.00mm" (at 59.69 113.9952 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 63.5 113.03 0)
@@ -2276,7 +2361,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "C?") (unit 1)
+          (reference "C6") (unit 1)
         )
       )
     )
@@ -2288,10 +2373,10 @@
     (property "Reference" "J3" (at 198.12 113.03 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Conn_01x06" (at 198.12 110.49 0)
+    (property "Value" "Mini DIN 6p" (at 198.12 110.49 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 195.58 113.03 0)
+    (property "Footprint" "Custom_Footprints:Connector_Mini-DIN_Female_6Pin_2rows" (at 195.58 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 195.58 113.03 0)
@@ -2392,13 +2477,13 @@
   (symbol (lib_id "Device:R") (at 109.22 71.12 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d9e331a9-a90f-4fc5-b590-eb3b49c3a671)
-    (property "Reference" "R?" (at 109.22 68.58 90)
+    (property "Reference" "R4" (at 109.22 68.58 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "220R" (at 109.22 71.12 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 109.22 72.898 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 109.22 72.898 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 109.22 71.12 0)
@@ -2409,7 +2494,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "R?") (unit 1)
+          (reference "R4") (unit 1)
         )
       )
     )
@@ -2418,13 +2503,13 @@
   (symbol (lib_id "Device:R") (at 124.46 49.53 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e134c9c7-1d9d-4a4a-83eb-fcc29bdbc167)
-    (property "Reference" "R?" (at 127 49.53 90)
+    (property "Reference" "R1" (at 127 49.53 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "680R" (at 124.46 49.53 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 122.682 49.53 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 122.682 49.53 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 124.46 49.53 0)
@@ -2435,7 +2520,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "R?") (unit 1)
+          (reference "R1") (unit 1)
         )
       )
     )
@@ -2444,7 +2529,7 @@
   (symbol (lib_id "power:GND") (at 143.51 162.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e5b8ece5-1d86-49b2-bc40-b2092aac2b78)
-    (property "Reference" "#PWR?" (at 143.51 168.91 0)
+    (property "Reference" "#PWR012" (at 143.51 168.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 147.32 163.83 0)
@@ -2460,33 +2545,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "#PWR?") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C") (at 63.5 44.45 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid e77b179d-1e86-4261-9e2a-4c5cda1a7248)
-    (property "Reference" "C?" (at 62.23 46.99 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "100u" (at 64.77 48.26 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 64.4652 48.26 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 63.5 44.45 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a9507ef2-6763-41d7-94f6-e16b6881c135))
-    (pin "2" (uuid 0ab248b4-29d1-4c00-ba27-dcb1ca4eeee1))
-    (instances
-      (project "CoCo2VideoMod"
-        (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "C?") (unit 1)
+          (reference "#PWR012") (unit 1)
         )
       )
     )
@@ -2495,7 +2554,7 @@
   (symbol (lib_id "Transistor_BJT:BC557") (at 132.08 55.88 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e85e9902-26e8-4929-91ea-73d59dcbf97e)
-    (property "Reference" "Q?" (at 137.16 54.6099 0)
+    (property "Reference" "Q4" (at 137.16 54.6099 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "BC557" (at 137.16 57.1499 0)
@@ -2513,7 +2572,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "Q?") (unit 1)
+          (reference "Q4") (unit 1)
         )
       )
     )
@@ -2522,7 +2581,7 @@
   (symbol (lib_id "power:GND") (at 115.57 82.55 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e9eae921-0f89-49f0-8af9-76806b43827b)
-    (property "Reference" "#PWR?" (at 115.57 88.9 0)
+    (property "Reference" "#PWR010" (at 115.57 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 119.38 83.82 0)
@@ -2538,7 +2597,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR010") (unit 1)
         )
       )
     )
@@ -2547,13 +2606,13 @@
   (symbol (lib_id "Device:R") (at 137.16 151.13 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f34d1a32-66be-47f3-99ef-17f309af0e55)
-    (property "Reference" "R?" (at 137.16 148.59 90)
+    (property "Reference" "R17" (at 137.16 148.59 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "3k9" (at 137.16 151.13 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 137.16 152.908 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 137.16 152.908 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 137.16 151.13 0)
@@ -2564,7 +2623,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "R?") (unit 1)
+          (reference "R17") (unit 1)
         )
       )
     )
@@ -2600,13 +2659,13 @@
   (symbol (lib_id "Device:R") (at 80.01 134.62 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fc7c0b88-f41e-49ee-9adc-62fb875be4dc)
-    (property "Reference" "R?" (at 82.55 134.62 90)
+    (property "Reference" "R15" (at 82.55 134.62 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "680R" (at 80.01 134.62 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 78.232 134.62 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (at 78.232 134.62 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 80.01 134.62 0)
@@ -2617,7 +2676,7 @@
     (instances
       (project "CoCo2VideoMod"
         (path "/e26cf8f1-b9bc-4bc2-a425-d53c73655768"
-          (reference "R?") (unit 1)
+          (reference "R15") (unit 1)
         )
       )
     )
