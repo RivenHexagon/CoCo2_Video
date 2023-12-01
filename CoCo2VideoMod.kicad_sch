@@ -4,6 +4,13 @@
 
   (paper "A4")
 
+  (title_block
+    (title "TRS-80   S-Video & Composite Video Module")
+    (date "2023-12-01")
+    (rev "1.0")
+    (company "Riven Hexagon Electronics")
+  )
+
   (lib_symbols
     (symbol "Connector_Generic:Conn_01x03" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (at 0 5.08 0)
