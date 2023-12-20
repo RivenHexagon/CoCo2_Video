@@ -26,7 +26,13 @@ The 6-pin mod has the following **pin out**:
 The PCB uses the **same** pin headers as the original module and does not need any additional wires to be pulled.
 
 ## The Mod
-The **design** was **inspired** by the **efforts** and research of ***[AC's 8-bit Zone](https://youtu.be/tayGsz7Xs3A "ACs 8-bit Zone - YouTube")*** on *YouTube*. It **combines** his S-Video and Conmposite Video **circuits** and casts them into a **single** circuit board.
+The **design** was **inspired** by the **efforts** and research of ***[AC's 8-bit Zone](https://youtu.be/tayGsz7Xs3A "ACs 8-bit Zone - YouTube")*** on *YouTube*. It **combines** his S-Video and Conmposite Video **circuits** and casts them into a **single** circuit board. However, he did not design a special circuit board, rather modified the original hardware and ran some loose cables to the outside.
+
+In contrast, the usage of the **Mini DIN** connecors and a specific **PCB** for this mod comes with certain **advantages**:
+
+* The **original** hardware stays in tact (desides desoldering the *MC1372*)
+* **no** loose **cables** coming out of the TRS-80 case
+* No modification of the **case** for extra connectors
 
 The PCB has custom footprints for *ASSMANN* Mini DIN Connectors:
 
