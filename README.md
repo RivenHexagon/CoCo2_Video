@@ -4,6 +4,8 @@ The ***RHCCV*** is a video mod for the ***Tandy Radio Shack Color Computer 2***.
 
 <img src="RHCCV-PCB.png" alt="MarineGEO circle logo" style="height: 375px; width:300px;"/>
 
+The [/jlcpcb](https://github.com/RivenHexagon/CoCo2_Video/tree/main/jlcpcb) folder contains production-ready files that can be directly uploaded to [jlcpcb.com](https://jlcpcb.com/) for PCB manufacturing.
+
 ## Assembly and Installation
 ### 4-pin Mini DIN installed *(S-Video only)*
 The **PCB** populated with a **4-pin** Mini DIN connector delivers **S-Video** as the **only** available **output**. The **pinout** is **standard** S-Video, as described [here](https://en.wikipedia.org/wiki/S-Video "S-Video Wikipedia").
@@ -25,14 +27,16 @@ The KiCad PCB design uses a custom footprint for *ASSMANN* Mini DIN Connectors:<
 ### Installation
 * Desolder the **clamps** of the **metal** box and the **pin headers** of the original video module from the **main board**. (I highly recommend using a **desoldering pump** and **solder wick**.)
 * Carefully **desolder** the ***MC1372*** from the PCB of the original video module.
-* Make sure that the **pins** of the *MC1372* are **free of solder** and plug it into the **socket** of the RHCCV. Mind the correct **orientation**.
+* On the RHCCV **PCB**, install a 14-pin **[IC socket](https://www.assmann-wsw.com/uploads/datasheets/ASS_0810_CO.pdf)** for **U1**, rather than soldering the ***MC1372*** directly onto the board.
+* Make sure that the **pins** of the *MC1372* are **free of solder** and plug it into the **IC socket** of the RHCCV. Mind the correct **orientation**.
+* Populate the remaining components listed in the [Bill of Materials](https://github.com/RivenHexagon/CoCo2_Video/blob/main/TRS-80-VideoMod-BOM.pdf).
 
-The new PCB uses the **same** pin headers as the **original** module and does not need any additional wires to be pulled.
+The new PCB uses the **same** pin headers as the **original** module and does not require any additional wires to be pulled.
 
 ## The Mod
 The **design** was **inspired** by the **efforts** and research of ***[AC's 8-bit Zone](https://youtu.be/tayGsz7Xs3A "ACs 8-bit Zone - YouTube")*** on *YouTube*. The RHCCV mod **combines** his S-Video and Conmposite Video **circuits** and casts them into a **single** board.
 
-Since he didn't design a PCB for them, but instead modified the original hardware, he had to route some loose cables to the outside. In contrast, the use of **Mini DIN** connecors for this mod has some **advantages**:
+Since he didn't design a PCB for them, but instead modified the original hardware, he had to route some loose cables to the outside. In contrast, the use of **Mini DIN** connectors for this mod comes with some **advantages**:
 
 * The **original** hardware stays **in tact** (desides desoldering the *MC1372*)
 * **No loose cables** coming out of the TRS-80 case
