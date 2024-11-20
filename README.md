@@ -7,8 +7,7 @@ The ***RHCCV*** is a video mod for the ***Tandy Radio Shack Color Computer 2***.
 The [/jlcpcb](https://github.com/RivenHexagon/CoCo2_Video/tree/main/jlcpcb) folder contains production-ready files that can be directly uploaded to [jlcpcb.com](https://jlcpcb.com/) for PCB manufacturing.
 
 ## Compatibility
-The current printed circuit board layout is designed to fit the CoCo2 model with a **horizontally** mounted RF **modulator** case. However, the modification itself would **also** work on earlier CoCo2 versions that use a **vertically** mounted modulator box. The only **differences** are in the **pinout** and the PCB **form factor**.
-
+The current printed circuit board layout is designed to fit the CoCo2 model with a **horizontally** mounted RF **modulator** case. However, the modification itself would **also** work on earlier CoCo2 versions that use a **vertically** mounted modulator box. The only **differences** are in the **pinout** and the PCB **form factor**. I intend to develop a **revised** PCB **layout** to **fit** the **earlier** form factor, with completion expected by January 2025.
 ## Assembly and Installation
 ### 4-pin Mini DIN installed *(S-Video only)*
 The **PCB** populated with a **4-pin** Mini DIN connector delivers **S-Video** as the **only** available **output**. The **pinout** is **standard** S-Video, as described [here](https://en.wikipedia.org/wiki/S-Video "S-Video Wikipedia").
