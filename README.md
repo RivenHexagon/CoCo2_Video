@@ -38,8 +38,7 @@ The new PCB uses the **same** pin headers as the **original** module and does no
 ## The Mod
 The **design** draws **inspiration** from the research and work of ***[AC's 8-bit Zone](https://youtu.be/tayGsz7Xs3A "ACs 8-bit Zone - YouTube")*** on *YouTube*. The RHCCV mod **integrates** his **S-Video** and **Conmposite Video** circuits into a **single** PCB.
 
-Unlike his approach, which involved modifying the original hardware and routing loose cables externally, this mod uses **Mini DIN** connectors, offering several **advantages**:
-
+The use of **Mini DIN** connectors in this PCB design provides several **benefits**:
 * **Preserves** the **original hardware** (except for desoldering the *MC1372*)
 * **Eliminates loose cables** exiting the TRS-80 case
 * **No case modification** for extra connectors required
